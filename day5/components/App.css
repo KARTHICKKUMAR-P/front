@@ -1,0 +1,122 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-image: url('C:\Users\KARTHICK KUMAR\OneDrive\Desktop\FS project\firstreactapp\src\assets\27.webp'); /* Replace with the actual URL */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Optional: keeps the image fixed in place */
+  background-color: rgba(148, 255, 48, 0.8); /* Optional: ensures readability in case the image doesn't load */
+}
+
+/* Container */
+.slam-book-container {
+  width: 80%;
+  max-width: 450px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Centering Submit Button */
+.submit-container {
+  display: flex;
+  justify-content: center; /* Centers the button horizontally */
+}
+
+/* Fieldset Styling */
+fieldset {
+  border: 2px solid #2980b9;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+legend {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2980b9;
+  margin-bottom: 15px;
+}
+
+/* Form Inputs */
+input[type="text"],
+input[type="date"],
+select {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+  border-color: #2980b9;
+  outline: none;
+  box-shadow: 0 0 5px rgba(41, 128, 185, 0.5);
+}
+
+/* Radio Buttons */
+input[type="radio"] {
+  margin: 10px 5px;
+}
+
+label {
+  font-size: 1rem;
+  margin-left: 10px;
+}
+
+/* Button Styling */
+button[type="submit"] {
+  padding: 12px 20px;
+  background-color: #2980b9;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+  background-color: #3498db;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .slam-book-container {
+    width: 90%;
+  }
+
+  /* Adjust button size and form layout for smaller screens */
+  button[type="submit"] {
+    padding: 10px 18px;
+    font-size: 1rem;
+  }
+
+  /* Adjust padding and spacing for inputs */
+  input[type="text"],
+  input[type="date"],
+  select {
+    padding: 8px;
+  }
+}
