@@ -9,7 +9,7 @@ export default function Createuser({ onUserCreated }) {
     const handleSubmit = (e) => {
         e.preventDefault();
         const user = { name, email, address }
-        console.log("Submitting user:", user) 
+        console.log("Submitting user:", user)
         axios.post("http://localhost:3300/api/create", user) // Ensure the endpoint is correct
             .then((res) => {
                 console.log("Response from server:", res.data)
