@@ -4,7 +4,6 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-  "prepare": "npm rebuild @rollup/rollup",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
